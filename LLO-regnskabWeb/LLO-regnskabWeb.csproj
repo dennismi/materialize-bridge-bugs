@@ -1,0 +1,85 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TypeScriptToolsVersion>2.8</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="resources\**" />
+    <Content Remove="resources\**" />
+    <EmbeddedResource Remove="resources\**" />
+    <None Remove="resources\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="aurelia_project\environments\dev.ts" />
+    <None Remove="aurelia_project\environments\prod.ts" />
+    <None Remove="aurelia_project\environments\stage.ts" />
+    <None Remove="aurelia_project\generators\attribute.ts" />
+    <None Remove="aurelia_project\generators\binding-behavior.ts" />
+    <None Remove="aurelia_project\generators\component.ts" />
+    <None Remove="aurelia_project\generators\element.ts" />
+    <None Remove="aurelia_project\generators\generator.ts" />
+    <None Remove="aurelia_project\generators\task.ts" />
+    <None Remove="aurelia_project\generators\value-converter.ts" />
+    <None Remove="aurelia_project\tasks\build.ts" />
+    <None Remove="aurelia_project\tasks\copy-files.ts" />
+    <None Remove="aurelia_project\tasks\process-css.ts" />
+    <None Remove="aurelia_project\tasks\process-markup.ts" />
+    <None Remove="aurelia_project\tasks\run.ts" />
+    <None Remove="aurelia_project\tasks\test.ts" />
+    <None Remove="aurelia_project\tasks\transpile.ts" />
+    <None Remove="src\app.ts" />
+    <None Remove="src\components\nav-bar\nav-bar.ts" />
+    <None Remove="src\environment.ts" />
+    <None Remove="src\main.ts" />
+    <None Remove="src\pages\home.ts" />
+    <None Remove="src\pages\home\home.ts" />
+    <None Remove="src\pages\home\index.ts" />
+    <None Remove="src\resources\elements\navbar.ts" />
+    <None Remove="src\resources\index.ts" />
+    <None Remove="test\unit\app.spec.ts" />
+    <None Remove="test\unit\setup.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="aurelia_project\environments\dev.ts" />
+    <TypeScriptCompile Include="aurelia_project\environments\prod.ts" />
+    <TypeScriptCompile Include="aurelia_project\environments\stage.ts" />
+    <TypeScriptCompile Include="aurelia_project\generators\attribute.ts" />
+    <TypeScriptCompile Include="aurelia_project\generators\binding-behavior.ts" />
+    <TypeScriptCompile Include="aurelia_project\generators\component.ts" />
+    <TypeScriptCompile Include="aurelia_project\generators\element.ts" />
+    <TypeScriptCompile Include="aurelia_project\generators\generator.ts" />
+    <TypeScriptCompile Include="aurelia_project\generators\task.ts" />
+    <TypeScriptCompile Include="aurelia_project\generators\value-converter.ts" />
+    <TypeScriptCompile Include="aurelia_project\tasks\build.ts" />
+    <TypeScriptCompile Include="aurelia_project\tasks\copy-files.ts" />
+    <TypeScriptCompile Include="aurelia_project\tasks\process-css.ts" />
+    <TypeScriptCompile Include="aurelia_project\tasks\process-markup.ts" />
+    <TypeScriptCompile Include="aurelia_project\tasks\run.ts" />
+    <TypeScriptCompile Include="aurelia_project\tasks\test.ts" />
+    <TypeScriptCompile Include="aurelia_project\tasks\transpile.ts" />
+    <TypeScriptCompile Include="src\app.ts" />
+    <TypeScriptCompile Include="src\components\nav-bar\nav-bar.ts" />
+    <TypeScriptCompile Include="src\environment.ts" />
+    <TypeScriptCompile Include="src\main.ts" />
+    <TypeScriptCompile Include="src\pages\home.ts" />
+    <TypeScriptCompile Include="src\pages\home\home.ts" />
+    <TypeScriptCompile Include="src\pages\home\index.ts" />
+    <TypeScriptCompile Include="src\resources\elements\navbar.ts" />
+    <TypeScriptCompile Include="src\resources\index.ts" />
+    <TypeScriptCompile Include="test\unit\app.spec.ts" />
+    <TypeScriptCompile Include="test\unit\setup.ts" />
+  </ItemGroup>
+
+</Project>

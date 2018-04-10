@@ -1,0 +1,9 @@
+<template>
+  <require from="../styles/css/materialize.css"></require>
+  <require from="./resources/elements/navbar"></require>
+  <md-colors md-primary-color="#78909C" md-accent-color="#4caf50" md-error-color="#f44336"></md-colors>
+  <navbar router.bind="router"></navbar>
+  <div class="main">
+    <router-view></router-view>
+  </div>
+</template>

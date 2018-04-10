@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27520.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LLO-regnskab", "LLO-regnskab\LLO-regnskab.csproj", "{45F2FB2E-57CA-4DC5-95CE-04E9F680EDC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LLO-regnskabWeb", "LLO-regnskabWeb\LLO-regnskabWeb.csproj", "{14DA1C15-39A8-4825-8CD2-AA3F52F2A0BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45F2FB2E-57CA-4DC5-95CE-04E9F680EDC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45F2FB2E-57CA-4DC5-95CE-04E9F680EDC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45F2FB2E-57CA-4DC5-95CE-04E9F680EDC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45F2FB2E-57CA-4DC5-95CE-04E9F680EDC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14DA1C15-39A8-4825-8CD2-AA3F52F2A0BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14DA1C15-39A8-4825-8CD2-AA3F52F2A0BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14DA1C15-39A8-4825-8CD2-AA3F52F2A0BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14DA1C15-39A8-4825-8CD2-AA3F52F2A0BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {114F4089-F993-44C9-989C-02FFD90D71B4}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,51 @@
+<template>
+  
+  <h1>Hello .. ${message}</h1>
+  <p>
+    Filen skal indeholde følgende felter og i nævnt rækkefølge:
+    <br/>
+    <ul>
+      <li>Dato</li>
+      <li>Tekst</li>
+      <li>Beløb</li>
+    </ul>
+  </p>
+  <form submit.delegate="submit(file)">
+
+    <input type="file" name="file" files.bind="file">
+    <!--accept=".sec .txt .csv"-->
+
+    <button type="submit">Send</button>
+
+ </form>
+
+  <table>
+    <thead>
+      <tr>
+        <td>Bilagsnummer</td>
+        <td>Dato</td>
+        <td>Tekst</td>
+        <td>beløb</td>
+        <td>Konto</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr repeat.for="data of postings">
+        <td>${data.bilagsNummer}</td>
+        <td>${data.dato | dateFormat}</td>
+        <td>${data.tekst}</td>
+        <td>${data['beløb']}</td>
+        <td>
+          <select md-select value.bind="data.kontoNr">
+            <option model.bind="null">...</option>
+              <option repeat.for="account of accountPlan" model.bind="account">
+                ${account.No}: ${account.Text}
+              </option>
+          </select>
+        ${data.konto}
+        </td>
+        
+      </tr>
+    </tbody>
+  </table>
+</template>

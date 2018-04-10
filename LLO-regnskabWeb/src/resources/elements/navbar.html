@@ -1,0 +1,41 @@
+<template>
+    <md-navbar class="show-on-medium-and-up hide-on-small-only">
+        <a href="#/" class="brand-logo center"><span>LLO Finanical</span></a>
+        <ul class="left">
+            <li repeat.for="row of router.navigation" class="${ row.isActive ? 'link-active' : '' }" md-waves>
+                <a if.bind="!row.config.auth || authenticated" href.bind="row.href">${ row.title }</a>
+            </li>
+        </ul>
+        <ul class="right">
+            <li if.bind="!authenticated">
+                <a click.delegate="auth.login()">Log In</a>
+            </li>
+            <li if.bind="authenticated">
+                    <a click.delegate="MyAccount()">My Account</a>
+            </li>
+            <li if.bind="authenticated">
+                <a click.delegate="auth.logout()">Log Out</a>
+            </li>
+        </ul>
+    </md-navbar>
+     <!-- <md-navbar class="show-on-small hide-on-med-and-up">
+        <a md-fixed="true" md-sidenav-collapse="ref.bind: sideNav;" class="left" style="cursor: pointer; padding: 0 10px;"><i class="material-icons">menu</i></a>
+        <a href="#/" class="brand-logo center"><span>LLO Finanical</span></a>
+        <ul class="right">
+            <li if.bind="!authenticated">
+                <a click.delegate="auth.login()">Log In</a>
+            </li>
+            <li if.bind="authenticated">
+                <a click.delegate="auth.logout()">Log Out</a>
+            </li>
+        </ul>
+    </md-navbar>
+    <md-sidenav md-close-on-click="true" view-model.ref="sideNav" class="show-on-small hide-on-med-and-up">
+        <ul>
+            <li repeat.for="row of router.navigation" class="${ row.isActive ? 'link-active' : '' }">
+                <a if.bind="!row.config.auth || authenticated" href.bind="row.href">${ row.title }</a>
+            </li>
+        </ul>
+    </md-sidenav>  -->
+
+</template>
